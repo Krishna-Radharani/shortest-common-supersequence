@@ -24,7 +24,7 @@ public:
         int i=n,j=m;
         while(i>0 and j>0){ //if both are  satisfied
             if(s1[i-1]==s2[j-1]){
-              str+=s1[i-1];
+              str+=s1[i-1]; //we are using 1 based indexing
               i--;
               j--;
             }
