@@ -26,13 +26,13 @@ public:
               i--;
               j--;
             }
-            else if(dp[i][j-1]<dp[i-1][j]){ //before moving left store the char
+            else if(dp[i][j-1]<dp[i-1][j]){ //before moving up store the char
                 str+=s1[i-1];
                 i--;
             }
             else{
                 str+=s2[j-1];
-                j--;//befor moving up store the char
+                j--;//befor moving left store the char
             }
         }
         while(i!=0){
